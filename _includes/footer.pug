@@ -1,0 +1,18 @@
+footer
+    .footer-opt-in
+        .heading Join The Newsletter
+        form
+            label.email-square(for="cool-email"): span.icon-envelope
+            input(id="cool-email",type="email",placeholder="Enter Your Email Address")
+            input(type="submit")
+        .disclaimer New Post Updates, Special Content, And More
+    
+    | {% include page-icons %}
+    
+    .info
+        .legal-links
+            a(href="#") Sitemap
+            |  -  
+            a(href="#") Privacy Policy
+        .copyright 
+            p Copyright 2016-{{ 'now' | date: "%Y" }} - FloeMedia, LLC - All Rights Reserved

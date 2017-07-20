@@ -1,0 +1,10 @@
+//- Media Query Sass Mixin
+
+//- Example Use:
+//- +media("max-width: 750px")
+//-     background: skyblue
+
+
+@mixin media($query)
+    @media screen and (#{$query})
+        @content

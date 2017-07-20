@@ -1,0 +1,47 @@
+---
+---
+
+
+
+//Importing normalize.scss
+@import "_parts/lib/mixins"
+
+@import "fonts/_icomoon"
+@import "fonts/_pacifico"
+@import "_parts/lib/normalize"
+@import "_parts/lib/bourbon/_bourbon"
+@import "_parts/lib/neat/_neat"
+
+@import "_parts/homepage"
+@import "_parts/page-icons"
+@import "_parts/footer"
+
+.row
+    +grid-container
+    @for $i from 1 to 12
+        .c#{$i}
+            +grid-column($i)
+            +grid-media((columns: 12, gutter: 0, media: "(max-width: 750px)"))
+                +grid-column($i*2)
+$font: "Roboto", sans-serif
+$font-size: 16px
+
+//Custom J5 styling - Feel free to remove
+html,body
+    margin: 0
+    height: 100%
+    font-family: $font
+    font-size: $font-size
+
+.clearfix
+    +clearfix
+
+img
+    max-width: 100%
+    height: auto
+
+img#async
+    width: 750px
+    height: 300px
+    background: rgb(226, 226, 226)
+    object-fit: cover

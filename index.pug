@@ -1,0 +1,46 @@
+---
+title: Doug Beney - Web Designer & Founder of FloeMedia
+description: Doug builds gorgeous websites. Come read his blog posts, check out his projects, or read his book notes.
+
+layout: blank
+---
+
+.full-page
+    h1 Doug Beney
+    h2 Web Designer / Founder of FloeMedia
+    | {% include page-icons %}
+.social-section
+    .container
+        .row
+            .c-label: span.label Social
+            .c-icon: span.icon.icon-facebook
+            .c-icon: span.icon.icon-twitter
+            .c-icon: span.icon.icon-instagram
+            .c-icon: span.icon.icon-linkedin
+            .c-icon: span.icon.icon-github
+            .c-label: span.label Media
+
+.blog-section
+    .newspaper
+        .fold
+        h1 The Blog
+        .row.main-story
+            a(href="#"): article
+                .c6: img(src="https://placehold.it/450x298")
+                .c6: .text
+                    h2 Lorem Ipsum
+                    p Lorem ipsum dolor sit amet, eripuit deleniti assentior nam at, in inimicus honestatis mei, ea iracundia honestatis sed. Tota etiam euismod nam cu. Eu latine blandit urbanitas sed, idque delicatissimi sed cu. At deleniti mandamus nam, eu eam omnis luptatum tincidunt.
+                
+        .row.sub-story
+            - for (var i = 0; i < 2; i++){
+            .c6
+                - for (var j = 0; j < 5; j++){
+                a(href="#"): article
+                    img(src="https://placehold.it/100x100")
+                    h2 Lorem ipsum
+                    p Lorem ipsum dolor sit amet, eripuit deleniti assentior nam at, in inimicus
+                - }
+            - }
+        a(href="#").all-posts View All Posts
+
+| {% include footer %}
