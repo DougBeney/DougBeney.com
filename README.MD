@@ -1,6 +1,8 @@
 <img src="/static/img/favicon.png" width="100"/>
 
-# DougBeney.com - My Personal Site, Created With Jekyll
+# DougBeney.com
+
+A Personal Site, Created With Jekyll.
 
 
 ## Technologies Used
