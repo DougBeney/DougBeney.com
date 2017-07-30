@@ -1,5 +1,13 @@
 livereload: true
 host: 192.168.123.158
+permalink: /:categories/:title/
 
 sass:
     sass_dir: static/css
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "page"

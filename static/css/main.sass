@@ -11,8 +11,11 @@
 @import "_parts/lib/normalize"
 @import "_parts/lib/bourbon/_bourbon"
 @import "_parts/lib/neat/_neat"
+@import "_parts/lib/photoswipe"
+@import "_parts/lib/photoswipe-default-skin"
 
 @import "_parts/homepage"
+@import "_parts/page"
 @import "_parts/page-icons"
 @import "_parts/footer"
 
@@ -30,8 +33,11 @@ $font-size: 16px
 html,body
     margin: 0
     height: 100%
+    width: 100%
+    display: inline-block
     font-family: $font
     font-size: $font-size
+    overflow-x: hidden
 
 .clearfix
     +clearfix

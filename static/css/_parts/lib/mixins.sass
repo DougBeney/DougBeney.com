@@ -8,3 +8,12 @@
 @mixin media($query)
     @media screen and (#{$query})
         @content
+
+
+@mixin larger-than-parent($container, $percentage)
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    max-width: #{100 + $percentage + "%"}
+    @media screen and (max-width: #{$container * ($percentage / 100) + $container})
+        max-width: 100vw
