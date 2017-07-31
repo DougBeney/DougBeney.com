@@ -40,3 +40,10 @@ html(lang="en")
 
 
         script(src="/static/js/main.js")
+        | {% for script in page.scripts %}
+        script(src="{{script}}")
+        | {% endfor %}
+        
+        | {% for script in page.asyncScripts %}
+        script(src="{{script}}", async="")
+        | {% endfor %}

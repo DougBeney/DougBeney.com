@@ -1,9 +1,11 @@
+
 livereload: true
 host: 192.168.123.158
 permalink: /:categories/:title/
 
 sass:
     sass_dir: static/css
+    style: compressed
 
 defaults:
   - scope:

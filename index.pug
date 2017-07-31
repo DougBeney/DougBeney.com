@@ -3,6 +3,8 @@ title: Doug Beney - Web Designer & Founder of FloeMedia
 description: Doug builds gorgeous websites. Come read his blog posts, check out his projects, or read his book notes.
 
 layout: "blank"
+
+asyncScripts: ["/static/js/physics.js"]
 ---
 
 .full-page
@@ -13,11 +15,11 @@ layout: "blank"
     .container
         .row
             .c-label: span.label Social
-            .c-icon: span.icon.icon-facebook
-            .c-icon: span.icon.icon-twitter
-            .c-icon: span.icon.icon-instagram
-            .c-icon: span.icon.icon-linkedin
-            .c-icon: span.icon.icon-github
+            .c-icon: a(href="https://facebook.com/dougbeney", target="_blank"): span.icon.icon-facebook
+            .c-icon: a(href="https://twitter.com/dougbeney", target="_blank"): span.icon.icon-twitter
+            .c-icon: a(href="https://instagram.com/dougbeney", target="_blank"): span.icon.icon-instagram
+            .c-icon: a(href="https://www.linkedin.com/in/dougbeney/", target="_blank"): span.icon.icon-linkedin
+            .c-icon: a(href="https://github.com/dougbeney", target="_blank"): span.icon.icon-github
             .c-label: span.label Media
 
 .blog-section
